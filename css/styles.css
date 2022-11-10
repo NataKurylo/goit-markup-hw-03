@@ -41,7 +41,7 @@ body {
 /* --------------------------HEADER------------------- */
 
 .header {
-    border: 1px solid var(--header-border-color);
+    border-bottom: 1px solid var(--header-border-color);
 }
 .header-container {
     display: flex;
@@ -62,10 +62,8 @@ body {
     line-height: 1.19;
 }
 .header-logo {
-    margin: 28px 79px 21px 14px;
-    /* padding: 28px 0 21px 14px;
-    margin-right: 79px;  -------- Чи правильно тут задати всі відступи маржинами, бо падінги збільшують клікабельність Лого?---*/
-
+    padding: 24px 0 25px;
+    margin-right: 93px; 
 }
 .logo-web, .header-link.current, .link:hover, .link:focus {
     color: var(--accent-color);
@@ -76,9 +74,8 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-color);
-    margin-top: 32px;
-    padding-bottom: 32px;
-}
+    padding: 32px 0 32px;
+} 
 .header-contacts {
     color: var(--main-text-color);
 }
@@ -187,17 +184,17 @@ img {
     background-color: var(--main-bg-color);
     border-radius: 0px 0px 4px 4px;
 }
-.team-subtitle, .team-text {
+.team-name, .team-profession {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
 }
-.team-subtitle{
-    margin: 30px auto 10px;
-    font-weight: 500;
+.team-member {
+    padding: 30px 0 30px;
 }
-.team-text {
-    margin-bottom: 30px;
+.team-name {
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
 /* ------------------------FOOTER----------------------- */
@@ -219,7 +216,7 @@ img {
     margin-top: 20px;   
 }
 .address-item:not(:last-child) {
-   padding-bottom: 9px;
+   margin-bottom: 9px;
 }
 
 /* ----------------------PROJECTS-------------------------*/
@@ -227,8 +224,7 @@ img {
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin: 0 0 34px;
-    padding-bottom: 16px;
+    margin-bottom: 50px;
 }
 .filter-btn {
     cursor: pointer;
@@ -268,5 +264,4 @@ img {
     padding: 20px 24px;
     border: 1px solid var(--projects-border-color);
     border-top: 0;    
-    /* ---------------------------- Чи можна робити так, чи обов'язково окремі бордери left, right, bottom? ----------*/
 }
